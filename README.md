@@ -5,9 +5,9 @@ This site describes the ancient city of Triddel, a central location in my pathfi
 ##purpose
 
 I created this site for several reasons:
-*I needed a place to practice webdesign
-*I wanted a newspaper to use as a prop for the campaign
-*I wanted an excuse to write more often
+* I needed a place to practice webdesign
+* I wanted a newspaper to use as a prop for the campaign
+* I wanted an excuse to write more often
 
 In order to learn more about software development I created this [github](https://github.com/chaim-post/triddel-gazette) to practice using version control software.
 
