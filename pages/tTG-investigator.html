@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Investigator -- The Triddel Gazette </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+            <nav class="siteNav">
+                <a href="../pages/about.html">about</a>
+                <a href="../index.html">Current Issue</a>
+                <a href="../pages/archives.html">Back Issues</a>
+                <a href="">The Investigator</a>
+                <a href="../pages/links.html">Links</a>
+            </nav>
+            <h1>The Triddle Gazette</h1>
+            <h2>The Investigator</h2>
+        </header>
+        <div class="contentBox">
+            <h3 class="centerText">Under-Construction</h3>
+            <p>This game is a work in progress. At the moment it doesn’t 
+            work at all but that is soon to change. The completed game 
+            is planned to have at least 10 different possible paths for 
+            the player to choose with many sub-paths within each major 
+            storyline. I plan on creating each storyline one at a time 
+            to allow a more complete experience sooner. 
+            Thanks for reading and check back soon!</p>
+        </div>
+        <p>
+        In this online roleplaying adventure take control of the newest 
+        reporter for the Triddel Gazette. Joining you will be Rupert 
+        Torrens, a senior investigative reporter for the Gazette. He 
+        will assist you as you explore the city looking for the perfect 
+        first story to start your career.
+        </p>
+        
+        <!--START INTRODUCTION-->
+        <section id="intro-0"> <!-- class="visible"-->
+            <p>You Find yourself in the Offices of the Triddel Gazette, 
+                the most widely distrubuted newspaper in Triddel. You 
+                were recently hired by the Gazette as it's newest 
+                investigative reporter. You have been told to meet 
+                Rupert Torrens, a senior reporter, who will be working 
+                with you during your first assignment. Looking around 
+                the large lobby full of red leather benches you see an
+                old man speaking with the receptionist. The receptionist
+                motions for him to sit down and he takes the spot on the
+                bench next to you. As the old man takes his seat he says to you.
+            </p>
+            <p>
+                <q>"Good day to you."</q><br>
+            </p>
+            <p>
+                You return his greeting.
+            </p>
+            <p>
+                <blockquote>"Pardon me my questions but I like to know what sort of person 
+                    I am speaking to and my eyes are not what they used to be, 
+                    would you mind telling me what sort of person you are?"</blockquote>
+            </p>
+            <form>
+               <button class="RaceClass" name="Gnome" type="button" data-class="mechanist" data-race="Gnome" data-story='"I heard that they have been creating somekind of underwater ship in gearhome.' data-plot="Underwater ship in Gearhome" data-value="#gear-1">
+                    Gnome Mechanist</button>
+                <button class="RaceClass" name="Human" type="button" data-class="cleric" data-race="Human" data-story="I heard that there was some sort of plague in Ruin's wharf." data-plot="The Plague in Ruin's Wharf" data-value="#plague-1">
+                    Human Cleric</button>
+                <button class="RaceClass" name="Elf" type="button" data-class="druid" data-race="Elf" data-story="I saw a poster advertising new animals at the zoo." data-plot="Zoo" data-value="#zoo-1">
+                    Elf Druid</button>
+             </form>
+        </section>
+
+        <section id="intro-1" class="hidden">
+        <p>
+            <blockquote>"And What is a <span class="js-RC" id="RC"> Race class </span> with a long 
+                day of work ahead of them doing waiting in the offeces of this 
+                fine newspaper, might I ask?"</blockquote>
+        </p>
+        <p>
+            You explain that you are a reporter and that you are waiting for your
+            partner so that you can look for your first story.
+        </p>
+        <p>
+            <q>"Well what will you report on then?"</q> He asks.
+        </p>
+        <p>
+            You tell him that You hadn't decided for sure yet and ask him if he 
+            has any ideas.
+        </p>
+        <p>
+            <span class="js-customMsg1"> The old man will tell the player about 
+                the special plot avaliable for the race/class combination they 
+                chose before</span> <q>Perhaps you could write about that."</q>
+        </p>
+        <p>
+            You continue to speak for a few minutes until a door opens and Mr. 
+            Torrens comes into the lobby. You thank the old man for his tip and
+            stand to meet Mr. Torrens.
+        </p>
+        <p>
+            <q>"Are you ready to start your big career as a reporter?"</q> He asks you.
+        </p>
+        <p>
+            You reply that you are.
+        </p>
+        <p>
+            <blockquote>"Well what would you like to investigate for your first big story? 
+                We could cover The Worlds Fair that opens in a few days or we could
+                look into the Drugs that are being sold in ruin's wharf or something
+                else. Whatever you want. So what one would you like to report on?"</blockquote>
+        </p>
+        <form>
+            <button name="fair" type="button" value="#fair-1">The Worlds Fair</button>
+            <button name="drugs" type="button" value="#drugs-1">Drugs in Ruin's Wharf</button>
+            <button class="js-RCplot" name="RCplot" type="button" value="">Race/class plot</button>
+        </form>
+        </section>
+        <!--END INTRODUCTION-->
+        
+        <!--START WORLDS FAIR STORYLINE-->
+        <section id="fair-1" class="hidden">
+            <p>this is the start of the worlds fair storyline. coming soon.</p>
+        </section>
+        <!--END WORLDS FAIR STORYLINE-->
+        
+        <!--START DRUGS STORYLINE-->
+        <section id="drugs-1" class="hidden">
+            <p>this is the start of the drugs in ruin's wharf storyline. coming soon.</p>
+        </section>
+        <!--END DRUGS STORYLINE-->
+        
+        <!--START PLAGUE STORYLINE-->
+        <section id="plague-1" class="hidden">
+            <p>this is the start of the plague storyline. coming soon.</p>
+        </section>
+        <!--END PLAGUE STORYLING-->
+        
+        <!--START ZOO STORYLINE-->
+        <section id="zoo-1" class="hidden">
+            <p>this is the start of the zoo storyline. coming soon.</p>
+        </section>
+        <!--END ZOO STORYLINE-->
+        
+        <!--START GEARHOME STORYLINE-->
+        <section id="gear-1" class="hidden">
+            <p>
+                <q>"An underwater boat eh? Sounds Exciting!"</q> says Rupert, <q>"lets get going then."</q>
+                He leads you out of the offices and down the street to the local 
+                portal of the city portal network. You show your passes to the guard
+                and he sets the destination to Gearhome. Stepping through the the 
+                black stone ring you find yourself in the Gnomish industrial, the shadows of the larger city above casting a perpetual twilight on the noisy smoke filled ward.
+            </p>
+            <p>
+                Turning to you Rupert asks <q>"Where exactly did you say this boat was?"</q>
+            </p>
+            <p>
+                The old man didn't tell you where in gearhome the boat was being constucted what do you do?
+                <form>
+                    <button name="ask for directions" type="button" value="#gear-2a" data-connection="#gear-2">Admit to Rupert that you don't know where the boat is. Perhaps you could ask someone for directions.</button>
+                    <button name="use engineering knowledge" type="button" value="#gear-2b" data-connection="#gear-2">Use your knowledge of engineering to guess where the boat is being constructed.</button>
+                </form>
+            </p>
+        </section>
+
+        <section id="gear-2a" class="hidden">
+            <p>You admit to Rupert that you don't know exactly where the boat is and say that you should ask for directions.</p>
+            <blockuote>"Something like that can't be too hard to find, I have a friend who works close to here let's ask him."</blockuote>
+            <!--TODO: style blockquotes to match p, first letter large bold, etc. -->
+            <p>You walk through the crowds of Gnomes, Dwarves, and Human workmen until you come to a small parts shop, 
+                stepping inside Rupert calls to a man behind the counter, <q>"Hey, Will, I was wondering if you knew anything about a underwater boat?"</q></p>
+            <p>"Aye I do indeed Mr. Torrens." the man goes on to explain that he heard an inventor by the name of Cornelius Fulton 
+                had created a small boat that could travel underwater and that a him and his colleges were creating an improved version. 
+                He gives you directions to a workshop near the water were the machine is being constructed.</p>
+
+        </section>
+
+        <section id="gear-2b" class="hidden">
+            <p>You admit to Rupert that you don't know exactly where the boat is. However you explain that as this ship must be 
+                both located near the water and near to a mill that can fabricate the neccesary metal componets and that you know of a few likely spots to look.</p>
+
+            <p><q>"Well you sound like you know what your talking about, lead the way."</q> Rupert says with a wave of his hand in 
+                the direction of the docks. At the second location you think that you have found the right place.</p>
+
+        </section>
+
+        <section id="gear-2" class="hidden">
+            <p>The building is a large wooden shed that faces the water. A metal track has been laid that enters the water.
+                As you approuch the entrance you can see a large armored figure standing before the door. He appears to be 
+                a officer of the guard. Approaching him you ask if you may go inside.</p>
+        </section>
+
+        <section id="gear-3a" class="hidden"></section>
+
+        <section id="gear-3b" class="hidden"></section>
+
+        <section id="gear-3" class="hidden"></section>
+
+        <section id="gear-4" class="hidden"></section>
+
+
+        <!--END GEARHOME STORYLINE-->
+
+        
+        <footer>
+            &copy; 2013-2014 Chaim Post
+            <address>contact the webmaster at 
+                webmaster.triddelgazette@gmail.com</address>
+    </footer>
+        
+        <script src="../js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/the-investigator.js"></script>
+
+
+    </body>
+</html>
