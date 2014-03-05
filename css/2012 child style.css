@@ -1,0 +1,55 @@
+/*
+ Theme Name:   Twenty twelve Child
+ Description:  Twenty twelve Child Theme
+ Author:       chaim post
+ Template:     twentytwelve
+ Version:      0.0.1
+ Tags:		   
+ Text Domain:  twenty-fourteen-child
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+
+.type-page .entry-header{
+	display: none;
+}
+
+.site-content{
+	margin: 0px 0px 0px 0px;
+	margin: 0rem 0rem 0rem 0rem;
+}
+
+html{
+	min-height: 100%; /*needed to make css gradient reach the top of the screen*/
+}
+
+.site-title{
+    text-align: center;
+    
+}
+
+@media screen and (min-width: 600px) {
+    .site-title{
+        
+    }
+}
+
+@media screen and (min-width: 960px) {
+	body {
+		background-color: #fff;
+		
+		background-image: url("http://triddelgazette.altervista.org/wp-content/uploads/2014/03/top-banner.png"); /*fall back if gradients are not supported*/
+
+		background-image: url("http://triddelgazette.altervista.org/wp-content/uploads/2014/03/top-banner.png"), -webkit-linear-gradient(top, skyblue, skyblue 140px, gainsboro 141px, grey); /* For Chrome and Safari */
+  		background-image: url("http://triddelgazette.altervista.org/wp-content/uploads/2014/03/top-banner.png"), -moz-linear-gradient(top, skyblue, skyblue 140px, gainsboro 141px, grey); /* For old Fx (3.6 to 15) */
+	  	background-image: url("http://triddelgazette.altervista.org/wp-content/uploads/2014/03/top-banner.png"), -ms-linear-gradient(top, skyblue, skyblue 140px, gainsboro 141px, grey); /* For pre-releases of IE 10*/
+  		background-image: url("http://triddelgazette.altervista.org/wp-content/uploads/2014/03/top-banner.png"), -o-linear-gradient(top, skyblue, skyblue 140px, gainsboro 141px, grey); /* For old Opera (11.1 to 12.0) */
+		background-image: url("http://triddelgazette.altervista.org/wp-content/uploads/2014/03/top-banner.png"), linear-gradient(to bottom, skyblue, skyblue 140px, gainsboro 141px, grey);
+		
+		background-repeat: no-repeat;
+	}
+}
